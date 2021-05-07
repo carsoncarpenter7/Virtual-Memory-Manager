@@ -115,7 +115,7 @@ int main(int argc, const char *argv[])
       if (tlb[i].pageNum == page)
       {
         hit = tlb[i].frameNum;
-        physical_add = hit * frame_SIZE + offset;
+        physical_add = hit * FRAME_SIZE + offset;
       }
     if (!(hit == -1))
       tlb_hit_count++;
